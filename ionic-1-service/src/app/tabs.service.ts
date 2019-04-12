@@ -5,13 +5,9 @@ import { Injectable } from '@angular/core';
 })
 export class TabsService {
 
-	constructor() { }
+	constructor(private tabName: TabsService) { }
 
-	getTabBameForId(id){
-		public tab1 = "Tab 1";
-		public tab2 = "Tab 2";
-		public tab3 = "Tab 3";
-	}
-
-
+	public tab1 = "Première tab";
+  	public tab2 = "Deuxième tab";
+  	public tab3 = "Troisième tab";
 }
